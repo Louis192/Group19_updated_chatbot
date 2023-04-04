@@ -40,7 +40,7 @@ logger = logging.getLogger(__name__)
 user_semaphores = {}
 
 HELP_MESSAGE = """Command:
-⚪ /mode – Select To Ask Any Question
+⚪ /start – Select To Ask Any Question❓
 """
 
 
@@ -92,11 +92,10 @@ async def start_handle(update: Update, context: CallbackContext):
     db.set_user_attribute(user_id, "last_interaction", datetime.now())
     db.start_new_dialog(user_id)
     
-    # reply_text = "Hi! I'm <b>ChatGPT</b> bot implemented with GPT-3.5 OpenAI API 🤖\n\n"
-    reply_text = "Hi! This <b>Group 19 Team</b> bot implemented with GPT-3.5 OpenAI API 🤖\n\n"
+    reply_text = "Hi! This <b>Group 19 Team 🤡</b> bot implemented with GPT-3.5 OpenAI API 🤖\n\n"
     reply_text += HELP_MESSAGE
 
-    # reply_text += "\nPlease kindly... ask us anything!"
+
     
     await update.message.reply_text(reply_text, parse_mode=ParseMode.HTML)
 
@@ -218,9 +217,9 @@ async def message_handle(update: Update, context: CallbackContext, message=None,
         # send message if some messages were removed from the context
         if n_first_dialog_messages_removed > 0:
             if n_first_dialog_messages_removed == 1:
-                text = "✍️ <i>Note:</i> Your current dialog is too long, so your <b>first message</b> was removed from the context.\n Send /new command to start new dialog"
+                text = "✍️ <i>Note:</i> Your current dialog is too long, so your <b>first message</b> was removed from the context.\n Send /start command to start new dialog"
             else:
-                text = f"✍️ <i>Note:</i> Your current dialog is too long, so <b>{n_first_dialog_messages_removed} first messages</b> were removed from the context.\n Send /new command to start new dialog"
+                text = f"✍️ <i>Note:</i> Your current dialog is too long, so <b>{n_first_dialog_messages_removed} first messages</b> were removed from the context.\n Send /start command to start new dialog"
             await update.message.reply_text(text, parse_mode=ParseMode.HTML)
 
 
@@ -404,8 +403,8 @@ async def error_handle(update: Update, context: CallbackContext) -> None:
 
 async def post_init(application: Application):
     await application.bot.set_my_commands([
-        # BotCommand("/new", "Start new dialog"),
-         BotCommand("/mode", "Select chat mode")
+
+         BotCommand("/start", "Select chat mode")
         
     ])
 
