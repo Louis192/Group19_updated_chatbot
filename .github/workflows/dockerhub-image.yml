@@ -1,9 +1,9 @@
-name: Docker Image CD/CI
+name: ci
 
 on:
   push:
     branches:
-      - 'master'
+      - 'main'
 
 jobs:
   docker:
