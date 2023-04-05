@@ -40,7 +40,7 @@ logger = logging.getLogger(__name__)
 user_semaphores = {}
 
 HELP_MESSAGE = """Command:
-⚪ /mode – Select To Ask Any Question
+⚪ /mode – Select To ask your travelling needs
 """
 
 
