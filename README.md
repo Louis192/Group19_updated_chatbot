@@ -1,36 +1,24 @@
-# ChatGPT Telegram Bot: **GPT-4. Fast. No daily limits. Special chat modes**
+# **** Group19 Telegram Bot ****
 
+# COMP7940 Cloud Computing 
 
+# This Telegram Chatbot is used to help people to ask questions 
+# The questions about traveling in Japan
+# For example:
+- How many days should I spend in Japan?
+- When should I visit Japan?
+- How many days in Kyoto is enough?
+- Which is the best city to visit in Japan?
+- Can you give me map to travel from Osaka to Kyoto?
+- How much is Mcdonalds in Japan?
 
-## Features
-- Low latency replies (it usually takes about 3-5 seconds) 
-- No request limits
-- Message streaming (watch demo)
-- GPT-4 support
-- Voice message recognition
-- Code highlighting
-- Special chat modes: 👩🏼‍🎓 Assistant, 👩🏼‍💻 Code Assistant, 📝 Text Improver and 
-
--
-<p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmM2ZWVjY2M4NWQ3ZThkYmQ3MDhmMTEzZGUwOGFmOThlMDIzZGM4YiZjdD1n/unx907h7GSiLAugzVX/giphy.gif" />
-</p>
-
-
-
+# Youtube Demo
+https://www.youtube.com/watch?v=i48NQlB4w4c
 
 ## Bot commands
-- `/mode` – Select chat mode
-
-
-
-    ```
-
-4. 🔥 And now **run**:
-    ```bash
-    docker-compose --env-file config/config.env up --build
-    ```
+- `/start` – Select To Ask Any Question
 
 
 ## References
-1. [*Build ChatGPT from GPT-3*](https://learnprompting.org/docs/applied_prompting/build_chatgpt)
+*Build ChatGPT from GPT-3*
+https://learnprompting.org/docs/applied_prompting/build_chatgpt
