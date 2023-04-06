@@ -16,7 +16,7 @@
 https://www.youtube.com/watch?v=i48NQlB4w4c
 
 ## Bot commands
-- `/start` – Select To Ask Any Question
+- `/start` – Select To ask your travelling needs❓
 
 
 ## References
